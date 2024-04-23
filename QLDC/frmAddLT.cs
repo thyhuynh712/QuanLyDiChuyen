@@ -199,9 +199,13 @@ namespace QLDC
         }
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            frmQLLT frmQLLT = new frmQLLT();
-            frmQLLT.Show();
-            this.Close();
+            DialogResult result = MessageBox.Show("Bạn có chắc muốn thoát không?", "Hỏi thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                frmQLLT frmQLLT = new frmQLLT();
+                frmQLLT.Show();
+                this.Close();
+            }
         }
         private void frmAddLT_Load(object sender, EventArgs e)
         {

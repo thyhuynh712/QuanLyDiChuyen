@@ -21,9 +21,13 @@ namespace QLDC
         }
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            QLND frmQLND = new QLND();
-            frmQLND.Show();
-            this.Close();
+            DialogResult result = MessageBox.Show("Bạn có chắc muốn thoát không?", "Hỏi thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                QLND frmQLND = new QLND();
+                frmQLND.Show();
+                this.Close();
+            }
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
