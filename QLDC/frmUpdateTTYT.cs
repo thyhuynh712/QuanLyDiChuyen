@@ -26,7 +26,7 @@ namespace QLDC
             {
                 DataGridViewRow row = dataGridViewTTYTNguoiDan.Rows[e.RowIndex];
                 txtCCCD.Text = row.Cells["MAND"].Value.ToString();
-                txtHoTen.Text = row.Cells["TENND"].Value.ToString();
+                txtHoTen.Text = row.Cells["HOTEN"].Value.ToString();
                 txtNgaySinh.Text = row.Cells["NGAYSINH"].Value.ToString();
 
                 txtGioiTinh.Text = row.Cells["GIOITINH"].Value.ToString();
@@ -115,24 +115,27 @@ namespace QLDC
         }
         public void loadDanhSachTTYTNguoiDan()
         {
-            SqlConnection con = Connection.getConnection();
-            string sql = "select * from CT_THONGTINYTE";
-            SqlDataAdapter da = new SqlDataAdapter(sql, con);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataGridViewTTYTNguoiDan.DataSource = dt;
-            if (dataGridViewTTYTNguoiDan.Columns.Count >= 6)
+            using (SqlConnection con = Connection.getConnection())
             {
-                dataGridViewTTYTNguoiDan.Columns[0].HeaderText = "Mã TTYT";
-                dataGridViewTTYTNguoiDan.Columns[0].Width = 100;
-                dataGridViewTTYTNguoiDan.Columns[1].HeaderText = "Họ Tên";
-                dataGridViewTTYTNguoiDan.Columns[1].Width = 200;
-                dataGridViewTTYTNguoiDan.Columns[2].HeaderText = "Tình Trạng Sức Khoẻ";
-                dataGridViewTTYTNguoiDan.Columns[3].HeaderText = "Số Mũi Vắc Xin";
-                dataGridViewTTYTNguoiDan.Columns[4].HeaderText = "Tiếp Xúc";
-                dataGridViewTTYTNguoiDan.Columns[5].HeaderText = "Thời Gian Khai Báo";
+                con.Open();
+                string sql = "select * from CT_THONGTINYTE";
+                SqlDataAdapter da = new SqlDataAdapter(sql, con);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dataGridViewTTYTNguoiDan.DataSource = dt;
+                if (dataGridViewTTYTNguoiDan.Columns.Count >= 6)
+                {
+                    dataGridViewTTYTNguoiDan.Columns[0].HeaderText = "Mã TTYT";
+                    dataGridViewTTYTNguoiDan.Columns[0].Width = 100;
+                    dataGridViewTTYTNguoiDan.Columns[1].HeaderText = "Họ Tên";
+                    dataGridViewTTYTNguoiDan.Columns[1].Width = 200;
+                    dataGridViewTTYTNguoiDan.Columns[2].HeaderText = "Tình Trạng Sức Khoẻ";
+                    dataGridViewTTYTNguoiDan.Columns[3].HeaderText = "Số Mũi Vắc Xin";
+                    dataGridViewTTYTNguoiDan.Columns[4].HeaderText = "Tiếp Xúc";
+                    dataGridViewTTYTNguoiDan.Columns[5].HeaderText = "Thời Gian Khai Báo";
+                }
+                dataGridViewTTYTNguoiDan.ClearSelection();
             }
-            dataGridViewTTYTNguoiDan.ClearSelection();
         }
         public void resetData()
         {
@@ -210,64 +213,10 @@ namespace QLDC
         }
         private void btnXemTTYT_Click(object sender, EventArgs e)
         {
-           
-            if (DSTTYTNguoiDan.Count > 0) 
-            {
-                DialogResult res = MessageBox.Show("Xác nhận nhập thông tin y tế", "Xác nhận", MessageBoxButtons.OKCancel);
-                if (res == DialogResult.OK)
-                {
-                    SqlConnection con = Connection.getConnection();
-                    con.Open();
-                    SqlCommand cmd = new SqlCommand()
-                    {
-                        Connection = con,
-                        CommandType = CommandType.StoredProcedure,
-                        CommandText = "NGUOIDAN_THONGTINYTE",
-                    };
-                    try
-                    {
 
-                        cmd.Parameters.AddWithValue("@MaND", txtCCCD.Text.Trim());
-                        cmd.Parameters.AddWithValue("@TenND", txtHoTen.Text.Trim());
-                        cmd.Parameters.AddWithValue("@TGKhaiBao", dtpTGKB.Text.Trim());
-                        cmd.Parameters.AddWithValue("@TinhTrangSK", txtTTSK.Text.Trim());
-                        cmd.Parameters.AddWithValue("@SoMuiVC", nSMVC.Text.Trim());
-                        cmd.Parameters.AddWithValue("@TiepXuc", nTX.Text.Trim());
-                        cmd.ExecuteNonQuery();
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Cập nhật thông tin y tế không thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return;
-                    }
-
-                    //nếu phiếu hợp lệ thì thêm thông tin các chi tiết y tế vào bảng chi tiết
-                    cmd.Parameters.Clear();
-                    cmd.CommandText = "PRO_CAPNHAT_TTYT";
-
-                    for (int i = 0; i < DSTTYTNguoiDan.Count; i++)
-                    {
-                        cmd.Parameters.AddWithValue("@MaND", DSTTYTNguoiDan[i].MAND);
-                        cmd.Parameters.AddWithValue("@TenND", DSTTYTNguoiDan[i].TENND);
-                        cmd.Parameters.AddWithValue("@TinhTrangSK", DSTTYTNguoiDan[i].TINHTRANGSK);
-                        cmd.Parameters.AddWithValue("@TGKhaiBao", DSTTYTNguoiDan[i].TGKHAIBAO);
-                        cmd.Parameters.AddWithValue("@SoMuiVC", DSTTYTNguoiDan[i].SOMUIVC);
-                        cmd.Parameters.AddWithValue("@TiepXuc", DSTTYTNguoiDan[i].TIEPXUC);
-                        cmd.ExecuteNonQuery();
-                        cmd.Parameters.Clear();
-                    }
-
-                    con.Close();
-                    MessageBox.Show("Cập nhật thông tin y tế cho người dân thành công", "Thông báo", MessageBoxButtons.OK);
-                    loadDanhSachTTYTNguoiDan();
-                    resetData();
-
-                }
-            }
-            else
-            {
-                MessageBox.Show("Vui lòng chọn người dân để cập nhật thông tin", "Thông báo", MessageBoxButtons.OK);
-            }
+            frmViewTTYT frmViewTTYT = new frmViewTTYT();
+            frmViewTTYT.Show();
+            this.Close();
         }
         private void dataGridViewTTYTNguoiDan_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

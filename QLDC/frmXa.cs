@@ -177,12 +177,7 @@ public void ResetData()
             LoadDanhSachXa();
             txtTenXa.Focus();
             txtMaXa.Text = Xa.GetAutoId().ToString();
-            if (TaiKhoan.loaiTaiKhoan == 3)
-            {
-                btnDiaDiem.Enabled = false;
-                btnDiaDiem.ForeColor = Color.White;
-                btnDiaDiem.BackColor = Color.LightSlateGray;
-            }
+           
         }
         private void cboTinh_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -218,49 +213,7 @@ public void ResetData()
         {
            errorProvider.SetError(txtTenXa, null);
         }
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(txtMaXa.Text.Trim()))
-            {
-                MessageBox.Show("Vui lòng chọn xã cần xóa!", "Thông báo", MessageBoxButtons.OK);
-            }
-            else
-            {
-              
-                SqlConnection con = Connection.getConnection();
-                con.Open();
-                SqlCommand cmd = new SqlCommand();
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Connection = con;
-                cmd.CommandText = "spCheckXa";
-                cmd.Parameters.AddWithValue("@MaXa", txtMaXa.Text.Trim());
-
-                object result = cmd.ExecuteScalar();
-
-                int code = Convert.ToInt32(result);
-                if (code == 1)
-                {
-                    DialogResult res = MessageBox.Show("Bạn có chắc muốn xóa xã này không?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    if (res == DialogResult.Yes)
-                    {
-                        cmd.Parameters.Clear();
-                        cmd.CommandText = "spDeleteXa";
-                        cmd.Parameters.AddWithValue("@MaXa", txtMaXa.Text.Trim());
-                        cmd.ExecuteNonQuery();
-
-                        MessageBox.Show("Xóa xã thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        getAllXa();
-                        ResetData();
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Xã không tồn tại", "Thông báo", MessageBoxButtons.OK);
-                }
-
-                con.Close();
-            }
-        }
+      
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
@@ -306,12 +259,7 @@ public void ResetData()
                 }
             }
         }
-        private void btnDiaDiem_Click(object sender, EventArgs e)
-        {
-            frmDiaDiem frmDiaDiem = new frmDiaDiem();
-            frmDiaDiem.Show();
-            this.Close();
-        }
+     
         private void dataGridViewHuyen_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 

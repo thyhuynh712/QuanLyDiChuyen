@@ -171,6 +171,7 @@ namespace QLDC
         {
             errorProvider.SetError(nTX, null);
         }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             string MAND = txtCCCD.Text.Trim();
@@ -179,6 +180,7 @@ namespace QLDC
             string SOMUIVC = nSMVC.Text.Trim();
             string TIEPXUC = nTX.Text.Trim();
             DateTime THOIGIANKB = dtpTGKB.Value;
+          
 
             using (SqlConnection con = Connection.getConnection())
             {
@@ -192,10 +194,19 @@ namespace QLDC
                     cmd.Parameters.AddWithValue("@SOMUIVC", SOMUIVC);
                     cmd.Parameters.AddWithValue("@TIEPXUC", TIEPXUC);
                     cmd.Parameters.AddWithValue("@THOIGIANKB", THOIGIANKB);
+                   
                     cmd.ExecuteNonQuery();
                 }
             }
             MessageBox.Show("Thêm mới thông tin y tế thành công", "Thông báo", MessageBoxButtons.OK);
+            if (TINHTRANGSK == "Nhiễm bệnh")
+            {
+                frmTinh frmTinh = (frmTinh)Application.OpenForms["frmTinh"];
+                if (frmTinh != null)
+                {
+                    frmTinh.CapNhatSoLuongNhiemBenh(txtTinh.Text.Trim(), 1);
+                }
+            }
 
             frmViewTTYT viewTTYT = (frmViewTTYT)Application.OpenForms["frmViewTTYT"];
             if (viewTTYT != null)
@@ -203,7 +214,8 @@ namespace QLDC
                 viewTTYT.loadDanhSachTTYTNguoiDan();
             }
 
-            this.Close();
+
+          
         }
         private void btnXemTTYT_Click(object sender, EventArgs e)
         {

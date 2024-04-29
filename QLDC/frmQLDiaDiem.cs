@@ -45,12 +45,7 @@ namespace QLDC
             frmXa.Show();
             this.Close();
         }
-        private void btnDuong_Click(object sender, EventArgs e)
-        {
-            frmDiaDiem frmDD = new frmDiaDiem();
-            frmDD.Show();
-            this.Close();
-        }
+    
 
 
         private void frmQLDiaDiem_Load(object sender, EventArgs e)

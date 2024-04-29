@@ -30,40 +30,25 @@ namespace QLDC
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnDuong = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnXa = new System.Windows.Forms.Button();
             this.btnHuyen = new System.Windows.Forms.Button();
             this.btnTinh = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnDuong
-            // 
-            this.btnDuong.BackColor = System.Drawing.Color.LightBlue;
-            this.btnDuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDuong.Location = new System.Drawing.Point(518, 426);
-            this.btnDuong.Name = "btnDuong";
-            this.btnDuong.Size = new System.Drawing.Size(195, 52);
-            this.btnDuong.TabIndex = 39;
-            this.btnDuong.Text = "Địa Chỉ";
-            this.btnDuong.UseVisualStyleBackColor = false;
-            this.btnDuong.Click += new System.EventHandler(this.btnDuong_Click);
             // 
             // btnThoat
             // 
             this.btnThoat.BackColor = System.Drawing.Color.LightBlue;
             this.btnThoat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(101, 505);
+            this.btnThoat.Location = new System.Drawing.Point(104, 374);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(634, 63);
             this.btnThoat.TabIndex = 37;
@@ -75,9 +60,9 @@ namespace QLDC
             // 
             this.btnXa.BackColor = System.Drawing.Color.LightBlue;
             this.btnXa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXa.Location = new System.Drawing.Point(101, 426);
+            this.btnXa.Location = new System.Drawing.Point(606, 251);
             this.btnXa.Name = "btnXa";
-            this.btnXa.Size = new System.Drawing.Size(195, 52);
+            this.btnXa.Size = new System.Drawing.Size(211, 52);
             this.btnXa.TabIndex = 36;
             this.btnXa.Text = "Phường/Xã/Thị Trấn";
             this.btnXa.UseVisualStyleBackColor = false;
@@ -87,7 +72,7 @@ namespace QLDC
             // 
             this.btnHuyen.BackColor = System.Drawing.Color.LightBlue;
             this.btnHuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuyen.Location = new System.Drawing.Point(522, 217);
+            this.btnHuyen.Location = new System.Drawing.Point(333, 251);
             this.btnHuyen.Name = "btnHuyen";
             this.btnHuyen.Size = new System.Drawing.Size(195, 52);
             this.btnHuyen.TabIndex = 35;
@@ -99,7 +84,7 @@ namespace QLDC
             // 
             this.btnTinh.BackColor = System.Drawing.Color.LightBlue;
             this.btnTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTinh.Location = new System.Drawing.Point(101, 217);
+            this.btnTinh.Location = new System.Drawing.Point(41, 251);
             this.btnTinh.Name = "btnTinh";
             this.btnTinh.Size = new System.Drawing.Size(195, 52);
             this.btnTinh.TabIndex = 34;
@@ -107,22 +92,11 @@ namespace QLDC
             this.btnTinh.UseVisualStyleBackColor = false;
             this.btnTinh.Click += new System.EventHandler(this.btnTinh_Click);
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Image = global::QLDC.Properties.Resources.fd496aa1a84d57782a7308abb96d4cf1;
-            this.pictureBox4.Location = new System.Drawing.Point(556, 293);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(122, 117);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 38;
-            this.pictureBox4.TabStop = false;
-            // 
             // pictureBox3
             // 
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Image = global::QLDC.Properties.Resources._372f677cf09a8cf376a10a13a236d7a5;
-            this.pictureBox3.Location = new System.Drawing.Point(139, 293);
+            this.pictureBox3.Location = new System.Drawing.Point(652, 118);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(122, 117);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -133,7 +107,7 @@ namespace QLDC
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Image = global::QLDC.Properties.Resources._9a70ba746399f90915cc095701913fc2;
-            this.pictureBox2.Location = new System.Drawing.Point(556, 84);
+            this.pictureBox2.Location = new System.Drawing.Point(367, 118);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(122, 117);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -145,7 +119,7 @@ namespace QLDC
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = global::QLDC.Properties.Resources._1263913;
-            this.pictureBox1.Location = new System.Drawing.Point(139, 84);
+            this.pictureBox1.Location = new System.Drawing.Point(79, 118);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(122, 117);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -169,10 +143,8 @@ namespace QLDC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(847, 588);
+            this.ClientSize = new System.Drawing.Size(847, 484);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnDuong);
-            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnXa);
             this.Controls.Add(this.btnHuyen);
@@ -184,7 +156,6 @@ namespace QLDC
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý Địa Điểm";
             this.Load += new System.EventHandler(this.frmQLDiaDiem_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -193,9 +164,6 @@ namespace QLDC
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnDuong;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnXa;
         private System.Windows.Forms.Button btnHuyen;

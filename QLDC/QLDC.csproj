@@ -102,12 +102,6 @@
     <Compile Include="ThayDoiMatKhau.Designer.cs">
       <DependentUpon>ThayDoiMatKhau.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDiaDiem.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmDiaDiem.Designer.cs">
-      <DependentUpon>frmDiaDiem.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmHuyen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -255,9 +249,6 @@
     <EmbeddedResource Include="SoLuongNB.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>SoLuongNB.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmDiaDiem.resx">
-      <DependentUpon>frmDiaDiem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHuyen.resx">
       <DependentUpon>frmHuyen.cs</DependentUpon>

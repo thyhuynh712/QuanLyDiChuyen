@@ -160,7 +160,7 @@ namespace QLDC
             }
 
 
-            this.Close();
+          
         }
         private void btnXemDS_Click(object sender, EventArgs e)
         {

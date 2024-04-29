@@ -67,7 +67,6 @@ namespace QLDC
             dataGridViewHuyen.DataSource = dt;
         }
 
-        // hàm lấy các loại tài khoản đổ vào combobox tài khoản tài khoản
         public void getAllTinhType()
         {
             SqlConnection con = Connection.getConnection();
@@ -153,12 +152,8 @@ namespace QLDC
             LoadDanhSachHuyen();
             txtTenHuyen.Focus();
 
-            // Hiển thị giá trị số tự động tăng tiếp theo cho mã huyện
             txtMaHuyen.Text = Huyen.GetAutoId().ToString();
-            //txtMaHuyen.PlaceholderText = Huyen.GetAutoId().ToString();
-
-            // Khi load form tùy loại người dùng để ẩn hiện các chức năng 
-            // User thường không được dùng chức năng LapPhieuNhapThuoc
+          
             if (TaiKhoan.loaiTaiKhoan == 3)
             {
                 btnXa.Enabled = false;
@@ -189,50 +184,7 @@ namespace QLDC
         {
             errorProvider.SetError(txtTenHuyen, null);
         }
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            // Check if the user has selected a village to delete
-            if (string.IsNullOrEmpty(txtMaHuyen.Text.Trim()))
-            {
-                MessageBox.Show("Vui lòng chọn huyện cần xóa!", "Thông báo", MessageBoxButtons.OK);
-            }
-            else
-            {
-                
-                SqlConnection con = Connection.getConnection();
-                con.Open();
-                SqlCommand cmd = new SqlCommand();
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Connection = con;
-                cmd.CommandText = "spCheckHuyen";
-                cmd.Parameters.AddWithValue("@MaHuyen", txtMaHuyen.Text.Trim());
-
-                object result = cmd.ExecuteScalar();
-
-                int code = Convert.ToInt32(result);
-                if (code == 1) 
-                {
-                    DialogResult res = MessageBox.Show("Bạn có chắc muốn xóa huyện này không?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    if (res == DialogResult.Yes)
-                    {
-                        cmd.Parameters.Clear();
-                        cmd.CommandText = "spDeleteHuyen";
-                        cmd.Parameters.AddWithValue("@MaHuyen", txtMaHuyen.Text.Trim());
-                        cmd.ExecuteNonQuery();
-
-                        MessageBox.Show("Xóa huyện thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        getAllHuyen();
-                        ResetData();
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Huyện không tồn tại", "Thông báo", MessageBoxButtons.OK);
-                }
-
-                con.Close();
-            }
-        }
+       
         private void btnUpdate_Click(object sender, EventArgs e)
         {
 

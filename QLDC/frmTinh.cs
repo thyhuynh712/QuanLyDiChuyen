@@ -76,7 +76,6 @@ namespace QLDC
                 return false;
             }
 
-            // Kiểm tra trùng tên tỉnh
             SqlConnection con = Connection.getConnection();
             SqlCommand cmd = new SqlCommand()
             {
@@ -123,12 +122,9 @@ namespace QLDC
             LoadDanhSachTinh();
             txtTenTinh.Focus();
 
-            // Hiển thị giá trị số tự động tăng tiếp theo cho mã huyện
-            txtMaTinh.Text = Tinh.GetAutoId().ToString();
-            //txtMaHuyen.PlaceholderText = Huyen.GetAutoId().ToString();
 
-            // Khi load form tùy loại người dùng để ẩn hiện các chức năng 
-            // User thường không được dùng chức năng LapPhieuNhapThuoc
+            txtMaTinh.Text = Tinh.GetAutoId().ToString();
+
             if (TaiKhoan.loaiTaiKhoan == 3)
             {
                 btnHuyen.Enabled = false;
@@ -158,50 +154,7 @@ namespace QLDC
         {
             errorProvider.SetError(txtTenTinh, null);
         }
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            // Check if the user has selected a village to delete
-            if (string.IsNullOrEmpty(txtMaTinh.Text.Trim()))
-            {
-                MessageBox.Show("Vui lòng chọn tỉnh cần xóa!", "Thông báo", MessageBoxButtons.OK);
-            }
-            else
-            {
-                // Check if the village exists in the database
-                SqlConnection con = Connection.getConnection();
-                con.Open();
-                SqlCommand cmd = new SqlCommand();
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Connection = con;
-                cmd.CommandText = "spCheckTinh";
-                cmd.Parameters.AddWithValue("@MaTinh", txtMaTinh.Text.Trim());
-
-                object result = cmd.ExecuteScalar();
-
-                int code = Convert.ToInt32(result);
-                if (code == 1) // Village exists
-                {
-                    DialogResult res = MessageBox.Show("Bạn có chắc muốn xóa tỉnh này không?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    if (res == DialogResult.Yes)
-                    {
-                        cmd.Parameters.Clear();
-                        cmd.CommandText = "spDeleteTinh";
-                        cmd.Parameters.AddWithValue("@MaTinh", txtMaTinh.Text.Trim());
-                        cmd.ExecuteNonQuery();
-
-                        MessageBox.Show("Xóa tỉnh thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        getAllTinh();
-                        ResetData();
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Tỉnh không tồn tại", "Thông báo", MessageBoxButtons.OK);
-                }
-
-                con.Close();
-            }
-        }
+       
         private void btnUpdate_Click(object sender, EventArgs e)
         {
 
@@ -243,6 +196,10 @@ namespace QLDC
                     ResetData();
                 
             }
+            string tenTinh = txtTenTinh.Text.Trim();
+            int soLuong = Convert.ToInt32(txtSLNB.Text.Trim());
+
+            CapNhatSoLuongNhiemBenh(tenTinh, soLuong);
         }
         private void btnHuyen_Click(object sender, EventArgs e)
         {
@@ -253,6 +210,18 @@ namespace QLDC
         private void dataGridViewTinh_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+        public void CapNhatSoLuongNhiemBenh(string tenTinh, int soLuong)
+        {
+            // Tìm và cập nhật số lượng nhiễm bệnh trong giao diện của Tinh
+            foreach (DataGridViewRow row in dataGridViewTinh.Rows)
+            {
+                if (row.Cells["TENTINH"].Value.ToString() == tenTinh)
+                {
+                    row.Cells["SOLUONGNB"].Value = soLuong;
+                    break;
+                }
+            }
         }
     }
 }

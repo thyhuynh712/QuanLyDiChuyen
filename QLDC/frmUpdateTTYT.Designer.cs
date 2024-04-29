@@ -430,7 +430,7 @@
             this.btnXemTTYT.TabIndex = 200;
             this.btnXemTTYT.Text = "Xem TTYT";
             this.btnXemTTYT.UseVisualStyleBackColor = false;
-            this.btnXemTTYT.Click += new System.EventHandler(this.btnThoat_Click);
+            this.btnXemTTYT.Click += new System.EventHandler(this.btnXemTTYT_Click);
             // 
             // dataGridViewTTYTNguoiDan
             // 

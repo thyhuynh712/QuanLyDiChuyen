@@ -59,7 +59,7 @@
             this.btnUpdateND.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateND.Location = new System.Drawing.Point(306, 259);
             this.btnUpdateND.Name = "btnUpdateND";
-            this.btnUpdateND.Size = new System.Drawing.Size(195, 52);
+            this.btnUpdateND.Size = new System.Drawing.Size(209, 52);
             this.btnUpdateND.TabIndex = 8;
             this.btnUpdateND.Text = "Cập Nhật Người Dân";
             this.btnUpdateND.UseVisualStyleBackColor = false;
@@ -93,7 +93,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Image = global::QLDC.Properties.Resources._9a70ba746399f90915cc095701913fc2;
-            this.pictureBox2.Location = new System.Drawing.Point(340, 118);
+            this.pictureBox2.Location = new System.Drawing.Point(352, 118);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(122, 117);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

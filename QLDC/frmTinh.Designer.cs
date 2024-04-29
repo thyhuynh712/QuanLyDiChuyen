@@ -40,7 +40,6 @@
             this.txtMaTinh = new System.Windows.Forms.TextBox();
             this.txtTenTinh = new System.Windows.Forms.TextBox();
             this.txtSLNB = new System.Windows.Forms.TextBox();
-            this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnHuyen = new System.Windows.Forms.Button();
@@ -67,7 +66,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 81);
+            this.label2.Location = new System.Drawing.Point(12, 85);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(167, 20);
             this.label2.TabIndex = 20;
@@ -77,7 +76,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 128);
+            this.label3.Location = new System.Drawing.Point(12, 146);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(173, 20);
             this.label3.TabIndex = 21;
@@ -87,7 +86,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 180);
+            this.label4.Location = new System.Drawing.Point(12, 214);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(188, 20);
             this.label4.TabIndex = 22;
@@ -144,14 +143,14 @@
             // txtMaTinh
             // 
             this.txtMaTinh.BackColor = System.Drawing.Color.Silver;
-            this.txtMaTinh.Location = new System.Drawing.Point(206, 81);
+            this.txtMaTinh.Location = new System.Drawing.Point(206, 85);
             this.txtMaTinh.Name = "txtMaTinh";
             this.txtMaTinh.Size = new System.Drawing.Size(100, 26);
             this.txtMaTinh.TabIndex = 25;
             // 
             // txtTenTinh
             // 
-            this.txtTenTinh.Location = new System.Drawing.Point(206, 128);
+            this.txtTenTinh.Location = new System.Drawing.Point(206, 146);
             this.txtTenTinh.Name = "txtTenTinh";
             this.txtTenTinh.Size = new System.Drawing.Size(208, 26);
             this.txtTenTinh.TabIndex = 26;
@@ -160,31 +159,18 @@
             // txtSLNB
             // 
             this.txtSLNB.BackColor = System.Drawing.Color.Silver;
-            this.txtSLNB.Location = new System.Drawing.Point(206, 177);
+            this.txtSLNB.Location = new System.Drawing.Point(206, 211);
             this.txtSLNB.Name = "txtSLNB";
             this.txtSLNB.Size = new System.Drawing.Size(100, 26);
             this.txtSLNB.TabIndex = 27;
             this.txtSLNB.TextChanged += new System.EventHandler(this.txtSLNB_TextChanged);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.BackColor = System.Drawing.Color.LightBlue;
-            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(226, 235);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(188, 49);
-            this.btnDelete.TabIndex = 28;
-            this.btnDelete.Text = "Xoá Tỉnh/Thành phố";
-            this.btnDelete.UseVisualStyleBackColor = false;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.LightBlue;
             this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(16, 235);
+            this.btnUpdate.Location = new System.Drawing.Point(16, 308);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(195, 49);
             this.btnUpdate.TabIndex = 29;
@@ -197,7 +183,7 @@
             this.btnReset.BackColor = System.Drawing.Color.LightBlue;
             this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.Location = new System.Drawing.Point(16, 308);
+            this.btnReset.Location = new System.Drawing.Point(16, 397);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(195, 49);
             this.btnReset.TabIndex = 30;
@@ -210,7 +196,7 @@
             this.btnHuyen.BackColor = System.Drawing.Color.LightBlue;
             this.btnHuyen.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuyen.Location = new System.Drawing.Point(226, 308);
+            this.btnHuyen.Location = new System.Drawing.Point(245, 308);
             this.btnHuyen.Name = "btnHuyen";
             this.btnHuyen.Size = new System.Drawing.Size(188, 49);
             this.btnHuyen.TabIndex = 31;
@@ -223,9 +209,9 @@
             this.btnThoat.BackColor = System.Drawing.Color.LightBlue;
             this.btnThoat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(16, 389);
+            this.btnThoat.Location = new System.Drawing.Point(245, 397);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(398, 49);
+            this.btnThoat.Size = new System.Drawing.Size(188, 49);
             this.btnThoat.TabIndex = 32;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
@@ -244,7 +230,6 @@
             this.Controls.Add(this.btnHuyen);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.txtSLNB);
             this.Controls.Add(this.txtTenTinh);
             this.Controls.Add(this.txtMaTinh);
@@ -277,7 +262,6 @@
         private System.Windows.Forms.TextBox txtMaTinh;
         private System.Windows.Forms.TextBox txtTenTinh;
         private System.Windows.Forms.TextBox txtSLNB;
-        private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnHuyen;
