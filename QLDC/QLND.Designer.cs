@@ -61,7 +61,7 @@
             this.btnUpdateND.Name = "btnUpdateND";
             this.btnUpdateND.Size = new System.Drawing.Size(195, 52);
             this.btnUpdateND.TabIndex = 8;
-            this.btnUpdateND.Text = "Cập Nhật Thông Tin";
+            this.btnUpdateND.Text = "Cập Nhật Người Dân";
             this.btnUpdateND.UseVisualStyleBackColor = false;
             this.btnUpdateND.Click += new System.EventHandler(this.btnUpdateND_Click);
             // 
@@ -73,7 +73,7 @@
             this.btnViewND.Name = "btnViewND";
             this.btnViewND.Size = new System.Drawing.Size(195, 52);
             this.btnViewND.TabIndex = 9;
-            this.btnViewND.Text = "Xem Danh Sách";
+            this.btnViewND.Text = "Xem DS Người Dân";
             this.btnViewND.UseVisualStyleBackColor = false;
             this.btnViewND.Click += new System.EventHandler(this.btnViewND_Click);
             // 

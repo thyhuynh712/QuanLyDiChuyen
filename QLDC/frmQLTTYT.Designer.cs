@@ -62,7 +62,7 @@
             this.btnViewTTYT.Name = "btnViewTTYT";
             this.btnViewTTYT.Size = new System.Drawing.Size(195, 52);
             this.btnViewTTYT.TabIndex = 34;
-            this.btnViewTTYT.Text = "Xem Danh Sách";
+            this.btnViewTTYT.Text = "Xem TTYT";
             this.btnViewTTYT.UseVisualStyleBackColor = false;
             this.btnViewTTYT.Click += new System.EventHandler(this.btnViewTTYT_Click);
             // 
@@ -74,7 +74,7 @@
             this.btnUpdateTTYT.Name = "btnUpdateTTYT";
             this.btnUpdateTTYT.Size = new System.Drawing.Size(195, 52);
             this.btnUpdateTTYT.TabIndex = 33;
-            this.btnUpdateTTYT.Text = "Cập Nhật Thông Tin";
+            this.btnUpdateTTYT.Text = "Cập Nhật TTYT";
             this.btnUpdateTTYT.UseVisualStyleBackColor = false;
             this.btnUpdateTTYT.Click += new System.EventHandler(this.btnUpdateTTYT_Click);
             // 
@@ -94,7 +94,7 @@
             // 
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Image = global::QLDC.Properties.Resources._372f677cf09a8cf376a10a13a236d7a5;
-            this.pictureBox3.Location = new System.Drawing.Point(604, 111);
+            this.pictureBox3.Location = new System.Drawing.Point(609, 111);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(122, 117);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

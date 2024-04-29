@@ -150,7 +150,7 @@ namespace QLDC
                 }
             }
 
-
+            MessageBox.Show("Thêm mới cán bộ thành công", "Thông báo", MessageBoxButtons.OK);
             frmViewCB viewCB = (frmViewCB)Application.OpenForms["frmViewCB"];
             if (viewCB != null)
             {

@@ -105,6 +105,13 @@ namespace QLDC
            
             btnSearch.Click += btnSearch_Click;
             /*nudSoLuongNhap.Focus();*/
+            if (TaiKhoan.loaiTaiKhoan == 3)
+            {
+                txtNhap.Visible = false;
+                txtSign.Visible = false;
+                txtContent.Visible = false;
+            }
+
         }
         public void loadDanhSachTTYTNguoiDan()
         {

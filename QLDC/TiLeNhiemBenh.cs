@@ -16,14 +16,14 @@ namespace QLDC {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class CrystalReport1 : ReportClass {
+    public class TiLeNhiemBenh : ReportClass {
         
-        public CrystalReport1() {
+        public TiLeNhiemBenh() {
         }
         
         public override string ResourceName {
             get {
-                return "CrystalReport1.rpt";
+                return "TiLeNhiemBenh.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace QLDC {
         
         public override string FullResourceName {
             get {
-                return "QLDC.CrystalReport1.rpt";
+                return "QLDC.TiLeNhiemBenh.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace QLDC {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedCrystalReport1 : Component, ICachedReport {
+    public class CachedTiLeNhiemBenh : Component, ICachedReport {
         
-        public CachedCrystalReport1() {
+        public CachedTiLeNhiemBenh() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace QLDC {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            CrystalReport1 rpt = new CrystalReport1();
+            TiLeNhiemBenh rpt = new TiLeNhiemBenh();
             rpt.Site = this.Site;
             return rpt;
         }

@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnAddTTYT = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.SearchCell = new System.Windows.Forms.TextBox();
@@ -53,7 +53,7 @@
             // 
             this.btnAddTTYT.BackColor = System.Drawing.Color.LightBlue;
             this.btnAddTTYT.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddTTYT.Location = new System.Drawing.Point(40, 533);
+            this.btnAddTTYT.Location = new System.Drawing.Point(38, 615);
             this.btnAddTTYT.Name = "btnAddTTYT";
             this.btnAddTTYT.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnAddTTYT.Size = new System.Drawing.Size(179, 48);
@@ -120,7 +120,7 @@
             // 
             this.btnKBND.BackColor = System.Drawing.Color.LightBlue;
             this.btnKBND.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKBND.Location = new System.Drawing.Point(514, 533);
+            this.btnKBND.Location = new System.Drawing.Point(512, 615);
             this.btnKBND.Name = "btnKBND";
             this.btnKBND.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnKBND.Size = new System.Drawing.Size(222, 48);
@@ -133,7 +133,7 @@
             // 
             this.btnUpdateTTYT.BackColor = System.Drawing.Color.LightBlue;
             this.btnUpdateTTYT.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateTTYT.Location = new System.Drawing.Point(277, 533);
+            this.btnUpdateTTYT.Location = new System.Drawing.Point(275, 615);
             this.btnUpdateTTYT.Name = "btnUpdateTTYT";
             this.btnUpdateTTYT.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnUpdateTTYT.Size = new System.Drawing.Size(179, 48);
@@ -146,10 +146,10 @@
             // 
             this.btnThoat.BackColor = System.Drawing.Color.LightBlue;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(805, 533);
+            this.btnThoat.Location = new System.Drawing.Point(803, 615);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnThoat.Size = new System.Drawing.Size(179, 48);
+            this.btnThoat.Size = new System.Drawing.Size(201, 48);
             this.btnThoat.TabIndex = 194;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
@@ -167,37 +167,38 @@
             // 
             // dataGridViewTTYTNguoiDan
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTTYTNguoiDan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTTYTNguoiDan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewTTYTNguoiDan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewTTYTNguoiDan.DefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGridViewTTYTNguoiDan.Location = new System.Drawing.Point(61, 266);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewTTYTNguoiDan.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewTTYTNguoiDan.Location = new System.Drawing.Point(30, 272);
             this.dataGridViewTTYTNguoiDan.Name = "dataGridViewTTYTNguoiDan";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTTYTNguoiDan.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTTYTNguoiDan.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewTTYTNguoiDan.RowHeadersWidth = 62;
             this.dataGridViewTTYTNguoiDan.RowTemplate.Height = 28;
-            this.dataGridViewTTYTNguoiDan.Size = new System.Drawing.Size(923, 239);
+            this.dataGridViewTTYTNguoiDan.Size = new System.Drawing.Size(974, 308);
             this.dataGridViewTTYTNguoiDan.TabIndex = 195;
+            this.dataGridViewTTYTNguoiDan.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewTTYTNguoiDan_CellContentClick);
             // 
             // txtContent
             // 
@@ -235,7 +236,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1035, 610);
+            this.ClientSize = new System.Drawing.Size(1035, 688);
             this.Controls.Add(this.txtContent);
             this.Controls.Add(this.txtSign);
             this.Controls.Add(this.txtNhap);

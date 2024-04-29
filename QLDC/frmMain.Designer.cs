@@ -339,6 +339,7 @@
             this.tỉLệNhiễmBệnhSoVớiSốDânToolStripMenuItem.Name = "tỉLệNhiễmBệnhSoVớiSốDânToolStripMenuItem";
             this.tỉLệNhiễmBệnhSoVớiSốDânToolStripMenuItem.Size = new System.Drawing.Size(421, 34);
             this.tỉLệNhiễmBệnhSoVớiSốDânToolStripMenuItem.Text = "Tỉ Lệ Nhiễm Bệnh So Với Số Dân";
+            this.tỉLệNhiễmBệnhSoVớiSốDânToolStripMenuItem.Click += tỉLệNhiễmBệnhSoVớiSốDânToolStripMenuItem_Click;
             // 
             // sốCaNhiễmMỗiTỉnhToolStripMenuItem
             // 
@@ -352,6 +353,7 @@
             this.nhữngVùngCóCaNhiễmCaoNhấtToolStripMenuItem.Name = "nhữngVùngCóCaNhiễmCaoNhấtToolStripMenuItem";
             this.nhữngVùngCóCaNhiễmCaoNhấtToolStripMenuItem.Size = new System.Drawing.Size(421, 34);
             this.nhữngVùngCóCaNhiễmCaoNhấtToolStripMenuItem.Text = "Những Vùng Có Ca Nhiễm Cao Nhất";
+            this.nhữngVùngCóCaNhiễmCaoNhấtToolStripMenuItem.Click += nhữngVùngCóCaNhiễmCaoNhấtToolStripMenuItem_Click;
             // 
             // tàiKhoảnAdminToolStripMenuItem
             // 

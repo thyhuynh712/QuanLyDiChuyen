@@ -58,9 +58,9 @@
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Size = new System.Drawing.Size(965, 63);
+            this.label1.Size = new System.Drawing.Size(1089, 63);
             this.label1.TabIndex = 19;
-            this.label1.Text = "TỈNH";
+            this.label1.Text = "TỈNH/THÀNH PHỐ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
@@ -69,9 +69,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 81);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 20);
+            this.label2.Size = new System.Drawing.Size(167, 20);
             this.label2.TabIndex = 20;
-            this.label2.Text = "Mã Tỉnh:";
+            this.label2.Text = "Mã Tỉnh/Thành phố:";
             // 
             // label3
             // 
@@ -79,9 +79,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(12, 128);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 20);
+            this.label3.Size = new System.Drawing.Size(173, 20);
             this.label3.TabIndex = 21;
-            this.label3.Text = "Tên Tỉnh:";
+            this.label3.Text = "Tên Tỉnh/Thành phố:";
             // 
             // label4
             // 
@@ -97,11 +97,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(361, 76);
+            this.label5.Location = new System.Drawing.Point(449, 84);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(173, 20);
+            this.label5.Size = new System.Drawing.Size(263, 20);
             this.label5.TabIndex = 23;
-            this.label5.Text = "Danh Sách Các Tỉnh";
+            this.label5.Text = "Danh Sách Các Tỉnh/Thành phố";
             // 
             // dataGridViewTinh
             // 
@@ -123,7 +123,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Desktop;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewTinh.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewTinh.Location = new System.Drawing.Point(365, 118);
+            this.dataGridViewTinh.Location = new System.Drawing.Point(453, 118);
             this.dataGridViewTinh.Name = "dataGridViewTinh";
             this.dataGridViewTinh.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -136,7 +136,7 @@
             this.dataGridViewTinh.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewTinh.RowHeadersWidth = 62;
             this.dataGridViewTinh.RowTemplate.Height = 28;
-            this.dataGridViewTinh.Size = new System.Drawing.Size(563, 320);
+            this.dataGridViewTinh.Size = new System.Drawing.Size(606, 351);
             this.dataGridViewTinh.TabIndex = 24;
             this.dataGridViewTinh.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewTinh_CellClick);
             this.dataGridViewTinh.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewTinh_CellContentClick);
@@ -144,16 +144,16 @@
             // txtMaTinh
             // 
             this.txtMaTinh.BackColor = System.Drawing.Color.Silver;
-            this.txtMaTinh.Location = new System.Drawing.Point(103, 78);
+            this.txtMaTinh.Location = new System.Drawing.Point(206, 81);
             this.txtMaTinh.Name = "txtMaTinh";
             this.txtMaTinh.Size = new System.Drawing.Size(100, 26);
             this.txtMaTinh.TabIndex = 25;
             // 
             // txtTenTinh
             // 
-            this.txtTenTinh.Location = new System.Drawing.Point(101, 128);
+            this.txtTenTinh.Location = new System.Drawing.Point(206, 128);
             this.txtTenTinh.Name = "txtTenTinh";
-            this.txtTenTinh.Size = new System.Drawing.Size(187, 26);
+            this.txtTenTinh.Size = new System.Drawing.Size(208, 26);
             this.txtTenTinh.TabIndex = 26;
             this.txtTenTinh.TextChanged += new System.EventHandler(this.txtTenTinh_TextChanged);
             // 
@@ -171,11 +171,11 @@
             this.btnDelete.BackColor = System.Drawing.Color.LightBlue;
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(206, 235);
+            this.btnDelete.Location = new System.Drawing.Point(226, 235);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(134, 49);
+            this.btnDelete.Size = new System.Drawing.Size(188, 49);
             this.btnDelete.TabIndex = 28;
-            this.btnDelete.Text = "Xoá Tỉnh";
+            this.btnDelete.Text = "Xoá Tỉnh/Thành phố";
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
@@ -184,9 +184,9 @@
             this.btnUpdate.BackColor = System.Drawing.Color.LightBlue;
             this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(41, 235);
+            this.btnUpdate.Location = new System.Drawing.Point(16, 235);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(116, 49);
+            this.btnUpdate.Size = new System.Drawing.Size(195, 49);
             this.btnUpdate.TabIndex = 29;
             this.btnUpdate.Text = "Cập Nhật";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -197,9 +197,9 @@
             this.btnReset.BackColor = System.Drawing.Color.LightBlue;
             this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.Location = new System.Drawing.Point(41, 308);
+            this.btnReset.Location = new System.Drawing.Point(16, 308);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(116, 49);
+            this.btnReset.Size = new System.Drawing.Size(195, 49);
             this.btnReset.TabIndex = 30;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = false;
@@ -210,11 +210,11 @@
             this.btnHuyen.BackColor = System.Drawing.Color.LightBlue;
             this.btnHuyen.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuyen.Location = new System.Drawing.Point(206, 308);
+            this.btnHuyen.Location = new System.Drawing.Point(226, 308);
             this.btnHuyen.Name = "btnHuyen";
-            this.btnHuyen.Size = new System.Drawing.Size(134, 49);
+            this.btnHuyen.Size = new System.Drawing.Size(188, 49);
             this.btnHuyen.TabIndex = 31;
-            this.btnHuyen.Text = "Nhập Huyện";
+            this.btnHuyen.Text = "Nhập Quận/Huyện";
             this.btnHuyen.UseVisualStyleBackColor = false;
             this.btnHuyen.Click += new System.EventHandler(this.btnHuyen_Click);
             // 
@@ -223,9 +223,9 @@
             this.btnThoat.BackColor = System.Drawing.Color.LightBlue;
             this.btnThoat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(41, 389);
+            this.btnThoat.Location = new System.Drawing.Point(16, 389);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(299, 49);
+            this.btnThoat.Size = new System.Drawing.Size(398, 49);
             this.btnThoat.TabIndex = 32;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
@@ -239,7 +239,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(965, 481);
+            this.ClientSize = new System.Drawing.Size(1089, 495);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnHuyen);
             this.Controls.Add(this.btnReset);

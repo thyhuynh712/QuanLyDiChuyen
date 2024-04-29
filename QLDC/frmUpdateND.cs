@@ -24,6 +24,50 @@ namespace QLDC
             dataGridViewND.CellClick += dataGridViewND_CellClick;
             
         }
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string cccd = SearchCell.Text.Trim();
+
+            if (!string.IsNullOrEmpty(cccd))
+            {
+                using (SqlConnection con = Connection.getConnection())
+                {
+                    con.Open();
+                    using (SqlCommand cmd = new SqlCommand("TraCuuThongTinNguoiDan", con))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@TuKhoa", cccd);
+
+                        SqlDataAdapter da = new SqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+                        dataGridViewND.DataSource = dt;
+                        if (dataGridViewND.ColumnCount > 0)
+                        {
+                            dataGridViewND.Columns[0].HeaderText = "Mã CCCD";
+                            dataGridViewND.Columns[0].Width = 100;
+                            dataGridViewND.Columns[1].HeaderText = "Họ Tên";
+                            dataGridViewND.Columns[1].Width = 200;
+                            dataGridViewND.Columns[2].HeaderText = "Ngày Sinh";
+                            dataGridViewND.Columns[3].HeaderText = "Giới Tính";
+                            dataGridViewND.Columns[4].HeaderText = "Tỉnh";
+                            dataGridViewND.Columns[5].HeaderText = "Huyện";
+                            dataGridViewND.Columns[6].HeaderText = "Xã";
+                            dataGridViewND.Columns[7].HeaderText = "Số Nhà";
+                        }
+
+                    }
+                }
+
+                // Bỏ chọn dòng hiện tại (nếu có)
+                dataGridViewND.ClearSelection();
+            }
+            else
+            {
+                // Hiển thị thông báo lỗi nếu CCCD không được nhập
+                MessageBox.Show("Vui lòng nhập CCCD.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         public void loadTinh()
         {
             SqlConnection con = Connection.getConnection();
@@ -183,15 +227,13 @@ namespace QLDC
                 }
             }
 
-
+            MessageBox.Show("Cập nhật người dân thành công", "Thông báo", MessageBoxButtons.OK);
             frmViewND viewND = (frmViewND)Application.OpenForms["frmViewND"];
             if (viewND != null)
             {
                 viewND.loadDanhSachND();
             }
 
-
-            this.Close();
         }
 
         private void btnXemND_Click(object sender, EventArgs e)
@@ -241,7 +283,16 @@ namespace QLDC
             loadTinh();
             cboTinh.SelectedIndexChanged += cboTinh_SelectedIndexChanged;
             cboHuyen.SelectedIndexChanged += cboHuyen_SelectedIndexChanged;
-            loadDanhSachNguoiDan();
+            //loadDanhSachNguoiDan();
+
+            btnSearch.Click += btnSearch_Click;
+            if (TaiKhoan.loaiTaiKhoan == 3)
+            {
+                txtNhap.Visible = false;
+                txtSign.Visible = false;
+                txtContent.Visible = false;
+            }
+
         }
         private void cboTinh_SelectedIndexChanged(object sender, EventArgs e)
         {

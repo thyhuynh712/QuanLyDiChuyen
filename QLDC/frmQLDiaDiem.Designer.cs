@@ -54,7 +54,7 @@ namespace QLDC
             this.btnDuong.Name = "btnDuong";
             this.btnDuong.Size = new System.Drawing.Size(195, 52);
             this.btnDuong.TabIndex = 39;
-            this.btnDuong.Text = "Địa Điểm";
+            this.btnDuong.Text = "Địa Chỉ";
             this.btnDuong.UseVisualStyleBackColor = false;
             this.btnDuong.Click += new System.EventHandler(this.btnDuong_Click);
             // 
@@ -79,7 +79,7 @@ namespace QLDC
             this.btnXa.Name = "btnXa";
             this.btnXa.Size = new System.Drawing.Size(195, 52);
             this.btnXa.TabIndex = 36;
-            this.btnXa.Text = " Xã";
+            this.btnXa.Text = "Phường/Xã/Thị Trấn";
             this.btnXa.UseVisualStyleBackColor = false;
             this.btnXa.Click += new System.EventHandler(this.btnXa_Click);
             // 
@@ -91,7 +91,7 @@ namespace QLDC
             this.btnHuyen.Name = "btnHuyen";
             this.btnHuyen.Size = new System.Drawing.Size(195, 52);
             this.btnHuyen.TabIndex = 35;
-            this.btnHuyen.Text = "Huyện";
+            this.btnHuyen.Text = "Quận/Huyện";
             this.btnHuyen.UseVisualStyleBackColor = false;
             this.btnHuyen.Click += new System.EventHandler(this.btnHuyen_Click);
             // 
@@ -103,7 +103,7 @@ namespace QLDC
             this.btnTinh.Name = "btnTinh";
             this.btnTinh.Size = new System.Drawing.Size(195, 52);
             this.btnTinh.TabIndex = 34;
-            this.btnTinh.Text = "Tỉnh";
+            this.btnTinh.Text = "Tỉnh/Thành phố";
             this.btnTinh.UseVisualStyleBackColor = false;
             this.btnTinh.Click += new System.EventHandler(this.btnTinh_Click);
             // 

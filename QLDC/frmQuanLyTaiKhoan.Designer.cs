@@ -144,7 +144,7 @@
             this.dataGridViewTaiKhoan.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewTaiKhoan.RowHeadersWidth = 62;
             this.dataGridViewTaiKhoan.RowTemplate.Height = 28;
-            this.dataGridViewTaiKhoan.Size = new System.Drawing.Size(585, 170);
+            this.dataGridViewTaiKhoan.Size = new System.Drawing.Size(660, 270);
             this.dataGridViewTaiKhoan.TabIndex = 9;
             this.dataGridViewTaiKhoan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewTaiKhoan_CellClick);
             this.dataGridViewTaiKhoan.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewTaiKhoan_CellContentClick);
@@ -163,7 +163,7 @@
             // 
             this.btnAdd.BackColor = System.Drawing.Color.LightBlue;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(690, 282);
+            this.btnAdd.Location = new System.Drawing.Point(727, 317);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(132, 53);
             this.btnAdd.TabIndex = 9;
@@ -175,7 +175,7 @@
             // 
             this.btnDelete.BackColor = System.Drawing.Color.LightBlue;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(862, 282);
+            this.btnDelete.Location = new System.Drawing.Point(899, 317);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(132, 53);
             this.btnDelete.TabIndex = 10;
@@ -187,7 +187,7 @@
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.LightBlue;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(690, 374);
+            this.btnUpdate.Location = new System.Drawing.Point(727, 409);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(132, 53);
             this.btnUpdate.TabIndex = 11;
@@ -199,7 +199,7 @@
             // 
             this.btnThoat.BackColor = System.Drawing.Color.LightBlue;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(862, 374);
+            this.btnThoat.Location = new System.Drawing.Point(899, 409);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(132, 53);
             this.btnThoat.TabIndex = 12;
@@ -216,7 +216,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1035, 475);
+            this.ClientSize = new System.Drawing.Size(1059, 550);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnDelete);

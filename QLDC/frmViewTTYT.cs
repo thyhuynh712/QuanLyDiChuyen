@@ -102,6 +102,13 @@ namespace QLDC
         {
             
             btnSearch.Click += btnSearch_Click;
+            if (TaiKhoan.loaiTaiKhoan == 3)
+            {
+                txtNhap.Visible = false;
+                txtSign.Visible = false;
+                txtContent.Visible = false;
+            }
+
         }
         public void loadDanhSachTTYTNguoiDan()
         {
@@ -138,6 +145,11 @@ namespace QLDC
         
     }
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridViewTTYTNguoiDan_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

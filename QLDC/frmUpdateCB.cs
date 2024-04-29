@@ -23,6 +23,50 @@ namespace QLDC
             dataGridViewCB.CellClick += dataGridViewCB_CellClick;
             //this.ControlBox = false;
         }
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string cccd = SearchCell.Text.Trim();
+
+            if (!string.IsNullOrEmpty(cccd))
+            {
+                using (SqlConnection con = Connection.getConnection())
+                {
+                    con.Open();
+                    using (SqlCommand cmd = new SqlCommand("TraCuuThongTinCanBo", con))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@TuKhoa", cccd);
+
+                        SqlDataAdapter da = new SqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+                        dataGridViewCB.DataSource = dt;
+                        if (dataGridViewCB.ColumnCount > 0)
+                        {
+                            dataGridViewCB.Columns[0].HeaderText = "Mã CCCD";
+                            dataGridViewCB.Columns[0].Width = 100;
+                            dataGridViewCB.Columns[1].HeaderText = "Họ Tên";
+                            dataGridViewCB.Columns[1].Width = 200;
+                            dataGridViewCB.Columns[2].HeaderText = "Ngày Sinh";
+                            dataGridViewCB.Columns[3].HeaderText = "Giới Tính";
+                            dataGridViewCB.Columns[4].HeaderText = "Tỉnh";
+                            dataGridViewCB.Columns[5].HeaderText = "Huyện";
+                            dataGridViewCB.Columns[6].HeaderText = "Xã";
+
+                        }
+
+                    }
+                }
+
+                // Bỏ chọn dòng hiện tại (nếu có)
+                dataGridViewCB.ClearSelection();
+            }
+            else
+            {
+                // Hiển thị thông báo lỗi nếu CCCD không được nhập
+                MessageBox.Show("Vui lòng nhập CCCD.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         public void loadTinh()
         {
             SqlConnection con = Connection.getConnection();
@@ -92,10 +136,11 @@ namespace QLDC
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            loadDanhSachCanBo();
+           /* loadDanhSachCanBo();*/
             loadTinh();
             cboTinh.SelectedIndexChanged += cboTinh_SelectedIndexChanged;
             cboHuyen.SelectedIndexChanged += cboHuyen_SelectedIndexChanged;
+            btnSearch.Click += btnSearch_Click;
         }
         private void cboTinh_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -226,7 +271,7 @@ namespace QLDC
                 }
             }
 
-
+            MessageBox.Show("Cập nhật cán bộ thành công", "Thông báo", MessageBoxButtons.OK);
             frmViewCB viewCB = (frmViewCB)Application.OpenForms["frmViewCB"];
             if (viewCB != null)
             {
@@ -243,6 +288,16 @@ namespace QLDC
             this.Close();
         }
         private void dataGridViewCB_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtContent_Click(object sender, EventArgs e)
         {
 
         }

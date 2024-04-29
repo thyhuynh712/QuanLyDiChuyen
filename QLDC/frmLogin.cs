@@ -49,7 +49,12 @@ namespace QLDC
             }
         }
         private void btnLogin_Click(object sender, EventArgs e)
-        {  
+        {
+            if (string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text))
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK);
+                return;
+            }
             // Sự kiện click vào button đăng nhập 
             SqlConnection con = Connection.getConnection();
             try
@@ -109,7 +114,7 @@ namespace QLDC
                     frmain.Show();
                     this.Hide();
                 }
-                else if (code == 3 && selectedAccountTypeIndex == 3) // sai mật khẩu 
+                else if (code == 3) // sai mật khẩu 
                 {
                     MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác", "Thông báo", MessageBoxButtons.OK);
                     textBox2.Text = "";
@@ -117,9 +122,9 @@ namespace QLDC
                     checkShowPassword.Checked = false;
                     textBox1.Focus();
                 }
-                else if (code == 4 && selectedAccountTypeIndex == 4)
+                else if (code == 4)
                 {
-                    MessageBox.Show("Tài khoản không tồn tại", "Thông báo", MessageBoxButtons.OK);
+                    MessageBox.Show("Tài khoản không tồn tại. Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK);
                     textBox2.Text = "";
                     textBox1.Text = "";
                     checkShowPassword.Checked = false;

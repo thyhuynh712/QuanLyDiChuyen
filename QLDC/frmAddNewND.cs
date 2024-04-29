@@ -151,15 +151,15 @@ namespace QLDC
                     cmd.ExecuteNonQuery();
                 }
             }
+            MessageBox.Show("Thêm mới người dân thành công", "Thông báo", MessageBoxButtons.OK);
 
-            
             frmViewND viewND = (frmViewND)Application.OpenForms["frmViewND"];
             if (viewND != null)
             {
                 viewND.loadDanhSachND();
             }
 
-          
+
             this.Close();
         }
         private void btnXemDS_Click(object sender, EventArgs e)

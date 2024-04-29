@@ -48,7 +48,7 @@
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.Location = new System.Drawing.Point(128, 365);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(634, 63);
+            this.btnThoat.Size = new System.Drawing.Size(672, 63);
             this.btnThoat.TabIndex = 26;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
@@ -60,9 +60,9 @@
             this.btnViewLT.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewLT.Location = new System.Drawing.Point(355, 255);
             this.btnViewLT.Name = "btnViewLT";
-            this.btnViewLT.Size = new System.Drawing.Size(195, 52);
+            this.btnViewLT.Size = new System.Drawing.Size(229, 52);
             this.btnViewLT.TabIndex = 25;
-            this.btnViewLT.Text = "Xem Danh Sách";
+            this.btnViewLT.Text = "Xem Lộ Trình";
             this.btnViewLT.UseVisualStyleBackColor = false;
             this.btnViewLT.Click += new System.EventHandler(this.btnViewLT_Click);
             // 
@@ -82,7 +82,7 @@
             // 
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Image = global::QLDC.Properties.Resources._372f677cf09a8cf376a10a13a236d7a5;
-            this.pictureBox3.Location = new System.Drawing.Point(393, 122);
+            this.pictureBox3.Location = new System.Drawing.Point(405, 122);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(122, 117);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -104,7 +104,7 @@
             // 
             this.btnQLDD.BackColor = System.Drawing.Color.LightBlue;
             this.btnQLDD.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQLDD.Location = new System.Drawing.Point(647, 255);
+            this.btnQLDD.Location = new System.Drawing.Point(677, 255);
             this.btnQLDD.Name = "btnQLDD";
             this.btnQLDD.Size = new System.Drawing.Size(195, 52);
             this.btnQLDD.TabIndex = 28;
@@ -116,7 +116,7 @@
             // 
             this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox4.Image = global::QLDC.Properties.Resources.fd496aa1a84d57782a7308abb96d4cf1;
-            this.pictureBox4.Location = new System.Drawing.Point(685, 122);
+            this.pictureBox4.Location = new System.Drawing.Point(711, 122);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(122, 117);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -131,7 +131,7 @@
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Size = new System.Drawing.Size(898, 63);
+            this.label1.Size = new System.Drawing.Size(925, 63);
             this.label1.TabIndex = 29;
             this.label1.Text = "Quản Lý Lộ Trình";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -141,7 +141,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(898, 468);
+            this.ClientSize = new System.Drawing.Size(925, 468);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnQLDD);
             this.Controls.Add(this.pictureBox4);

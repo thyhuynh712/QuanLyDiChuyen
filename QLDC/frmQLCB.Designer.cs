@@ -46,9 +46,9 @@
             this.btnThoat.BackColor = System.Drawing.Color.LightBlue;
             this.btnThoat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(86, 350);
+            this.btnThoat.Location = new System.Drawing.Point(38, 377);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(634, 63);
+            this.btnThoat.Size = new System.Drawing.Size(828, 63);
             this.btnThoat.TabIndex = 17;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
@@ -58,11 +58,11 @@
             // 
             this.btnViewCB.BackColor = System.Drawing.Color.LightBlue;
             this.btnViewCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewCB.Location = new System.Drawing.Point(571, 250);
+            this.btnViewCB.Location = new System.Drawing.Point(644, 250);
             this.btnViewCB.Name = "btnViewCB";
-            this.btnViewCB.Size = new System.Drawing.Size(195, 52);
+            this.btnViewCB.Size = new System.Drawing.Size(205, 52);
             this.btnViewCB.TabIndex = 16;
-            this.btnViewCB.Text = "Xem Danh Sách";
+            this.btnViewCB.Text = "Xem DS Cán Bộ";
             this.btnViewCB.UseVisualStyleBackColor = false;
             this.btnViewCB.Click += new System.EventHandler(this.btnViewCB_Click);
             // 
@@ -70,11 +70,11 @@
             // 
             this.btnUpdateCB.BackColor = System.Drawing.Color.LightBlue;
             this.btnUpdateCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateCB.Location = new System.Drawing.Point(307, 250);
+            this.btnUpdateCB.Location = new System.Drawing.Point(336, 250);
             this.btnUpdateCB.Name = "btnUpdateCB";
-            this.btnUpdateCB.Size = new System.Drawing.Size(195, 52);
+            this.btnUpdateCB.Size = new System.Drawing.Size(220, 52);
             this.btnUpdateCB.TabIndex = 15;
-            this.btnUpdateCB.Text = "Cập Nhật Thông Tin";
+            this.btnUpdateCB.Text = "Cập Nhật Cán Bộ";
             this.btnUpdateCB.UseVisualStyleBackColor = false;
             this.btnUpdateCB.Click += new System.EventHandler(this.btnUpdateCB_Click);
             // 
@@ -82,9 +82,9 @@
             // 
             this.btnAddCB.BackColor = System.Drawing.Color.LightBlue;
             this.btnAddCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddCB.Location = new System.Drawing.Point(40, 250);
+            this.btnAddCB.Location = new System.Drawing.Point(52, 250);
             this.btnAddCB.Name = "btnAddCB";
-            this.btnAddCB.Size = new System.Drawing.Size(195, 52);
+            this.btnAddCB.Size = new System.Drawing.Size(205, 52);
             this.btnAddCB.TabIndex = 14;
             this.btnAddCB.Text = "Thêm Mới Cán Bộ";
             this.btnAddCB.UseVisualStyleBackColor = false;
@@ -94,7 +94,7 @@
             // 
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Image = global::QLDC.Properties.Resources._372f677cf09a8cf376a10a13a236d7a5;
-            this.pictureBox3.Location = new System.Drawing.Point(603, 109);
+            this.pictureBox3.Location = new System.Drawing.Point(692, 109);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(122, 117);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -105,7 +105,7 @@
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Image = global::QLDC.Properties.Resources._9a70ba746399f90915cc095701913fc2;
-            this.pictureBox2.Location = new System.Drawing.Point(341, 109);
+            this.pictureBox2.Location = new System.Drawing.Point(384, 109);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(122, 117);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -116,7 +116,7 @@
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = global::QLDC.Properties.Resources._1263913;
-            this.pictureBox1.Location = new System.Drawing.Point(78, 109);
+            this.pictureBox1.Location = new System.Drawing.Point(93, 109);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(122, 117);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -131,7 +131,7 @@
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Size = new System.Drawing.Size(800, 63);
+            this.label1.Size = new System.Drawing.Size(904, 63);
             this.label1.TabIndex = 18;
             this.label1.Text = "Quản Lý Cán Bộ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -141,7 +141,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(904, 497);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnViewCB);

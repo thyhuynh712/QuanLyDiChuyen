@@ -108,6 +108,7 @@
             this.checkShowPassword.TabIndex = 8;
             this.checkShowPassword.Text = "Hiển thị mật khẩu";
             this.checkShowPassword.UseVisualStyleBackColor = true;
+            this.checkShowPassword.CheckedChanged += checkShowPassword_CheckedChanged;
             // 
             // btnLogin
             // 
@@ -158,7 +159,7 @@
             this.logo.InitialImage = global::QLDC.Properties.Resources._1;
             this.logo.Location = new System.Drawing.Point(44, 87);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(256, 240);
+            this.logo.Size = new System.Drawing.Size(237, 240);
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logo.TabIndex = 12;
             this.logo.TabStop = false;

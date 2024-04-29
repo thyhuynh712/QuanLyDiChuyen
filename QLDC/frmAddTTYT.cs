@@ -97,6 +97,13 @@ namespace QLDC
             
             
             btnSearch.Click += btnSearch_Click;
+            if (TaiKhoan.loaiTaiKhoan == 3)
+            {
+                txtNhap.Visible = false;
+                txtSign.Visible = false;
+                txtContent.Visible = false;
+            }
+
             /*nudSoLuongNhap.Focus();*/
         }
         public void loadDanhSachNguoiDan()
@@ -188,6 +195,7 @@ namespace QLDC
                     cmd.ExecuteNonQuery();
                 }
             }
+            MessageBox.Show("Thêm mới thông tin y tế thành công", "Thông báo", MessageBoxButtons.OK);
 
             frmViewTTYT viewTTYT = (frmViewTTYT)Application.OpenForms["frmViewTTYT"];
             if (viewTTYT != null)

@@ -179,5 +179,15 @@ namespace QLDC.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_04_29_092357 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2024-04-29 092357", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

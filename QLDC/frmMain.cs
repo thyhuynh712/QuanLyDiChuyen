@@ -1,14 +1,21 @@
-﻿using CrystalDecisions.Windows.Forms;
+﻿using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Windows.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.PowerBI.Api;
+using Microsoft.PowerBI.Api.Models;
+using Microsoft.Rest;
+using Microsoft.Rest.Serialization;
 
 namespace QLDC
 {
@@ -151,19 +158,35 @@ namespace QLDC
 
                 data.Add(new NhiemBenhData { MaTinh = maTinh.ToString(), TenTinh = tenTinh, SoLuongNhiemBenh = soLuongNB });
             }
-            // Đóng kết nối và đóng SqlDataReader
+           
             reader.Close();
             con.Close();
 
             return data;
+        }
+        private void tỉLệNhiễmBệnhSoVớiSốDânToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string reportPath = "../../TiLeNhiemBenh.rpt"; 
+
+            ReportDocument report = new ReportDocument();
+            report.Load(reportPath);
+
+            CrystalReportViewer crystalReportViewer = new CrystalReportViewer();
+            crystalReportViewer.ReportSource = report;
+            crystalReportViewer.Dock = DockStyle.Fill;
+
+            Form reportForm = new Form();
+            reportForm.Controls.Add(crystalReportViewer);
+            reportForm.ShowDialog();
+
+            this.Close();
         }
         private void sốCaNhiễmMỗiTỉnhToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
                 SoLuongNB SLNB = new SoLuongNB();
 
-                // Thực hiện logic để lấy dữ liệu và truyền cho báo cáo
-                SLNB.SetDataSource(LoadDataForSoLuongNB()); // Hàm LoadDataForSoLuongNB() trả về danh sách dữ liệu cho báo cáo
+                SLNB.SetDataSource(LoadDataForSoLuongNB()); 
 
                 // Hiển thị báo cáo
                 CrystalReportViewer crystalReportViewer = new CrystalReportViewer();
@@ -177,7 +200,22 @@ namespace QLDC
                 this.Close();
             
         }
+        private void nhữngVùngCóCaNhiễmCaoNhấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            /*string filePath = @"../QLDC/ThongKeVungCoCaNhiem.pdf";
 
+            try
+            {
+                Process.Start(filePath);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Không thể mở tệp tin: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }*/
+            ThongKeCaNhiem frmThongKeCaNhiem = new ThongKeCaNhiem();
+            frmThongKeCaNhiem.Show();
+            this.Close();
+        }
         private void thayĐổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ThayDoiMatKhau frmThayDoiMatKhau = new ThayDoiMatKhau();

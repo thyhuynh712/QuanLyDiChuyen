@@ -218,6 +218,13 @@ namespace QLDC
             loadTinh1();
             cboTinh1.SelectedIndexChanged += cboTinh1_SelectedIndexChanged;
             cboHuyen1.SelectedIndexChanged += cboHuyen1_SelectedIndexChanged;
+            if (TaiKhoan.loaiTaiKhoan == 3)
+            {
+                txtNhap.Visible = false;
+                txtSign.Visible = false;
+                txtContent.Visible = false;
+            }
+
         }
         private void cboTinh_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -353,6 +360,7 @@ namespace QLDC
                     cmd.ExecuteNonQuery();
                 }
             }
+            MessageBox.Show("Thêm mới lộ trình thành công", "Thông báo", MessageBoxButtons.OK);
 
             frmViewLT viewLT = (frmViewLT)Application.OpenForms["frmViewLT"];
             if (viewLT != null)
