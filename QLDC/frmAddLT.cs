@@ -368,7 +368,6 @@ namespace QLDC
                 viewLT.loadDanhSachLoTrinh();
             }
 
-            this.Close();
         }
         private void btnXemLT_Click(object sender, EventArgs e)
         {

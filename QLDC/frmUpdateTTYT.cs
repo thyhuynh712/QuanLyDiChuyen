@@ -208,8 +208,6 @@ namespace QLDC
                 viewTTYT.loadDanhSachTTYTNguoiDan();
             }
 
-
-            this.Close();
         }
         private void btnXemTTYT_Click(object sender, EventArgs e)
         {
@@ -224,6 +222,36 @@ namespace QLDC
         }
 
         private void dataGridViewTTYTNguoiDan_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txtCCCD_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtHoTen_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtGioiTinh_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNgaySinh_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTinh_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
         {
 
         }

@@ -157,8 +157,6 @@ namespace QLDC
                 viewCB.loadDanhSachCB();
             }
 
-
-            this.Close();
         }
         private void btnXemCB_Click(object sender, EventArgs e)
         {
@@ -190,6 +188,11 @@ namespace QLDC
                 int selectedMahuyen = Convert.ToInt32(selectedHuyen["MAHUYEN"]);
                 loadXa(selectedMahuyen);
             }
+        }
+
+        private void checkFemale_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

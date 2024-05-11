@@ -278,8 +278,6 @@ namespace QLDC
                 viewCB.loadDanhSachCB();
             }
 
-
-            this.Close();
         }
         private void btnXemCB_Click(object sender, EventArgs e)
         {

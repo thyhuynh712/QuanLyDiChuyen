@@ -188,8 +188,6 @@ namespace QLDC
         private void btnUpdate_Click(object sender, EventArgs e)
         {
 
-            if (CheckData())
-            {
                 SqlConnection con = Connection.getConnection();
                 con.Open();
                 SqlCommand cmd = new SqlCommand()
@@ -226,7 +224,7 @@ namespace QLDC
                     MessageBox.Show("Cập nhật huyện thành công", "Thông báo", MessageBoxButtons.OK);
                     LoadDanhSachHuyen();
                     ResetData();
-                }
+                
             }
         }
         private void btnXa_Click(object sender, EventArgs e)

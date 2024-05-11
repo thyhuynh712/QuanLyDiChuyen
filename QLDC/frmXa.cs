@@ -218,8 +218,6 @@ public void ResetData()
         private void btnUpdate_Click(object sender, EventArgs e)
         {
 
-            if (CheckData())
-            {
                 SqlConnection con = Connection.getConnection();
                 con.Open();
                 SqlCommand cmd = new SqlCommand()
@@ -257,7 +255,6 @@ public void ResetData()
                     LoadDanhSachXa();
                     ResetData();
                 }
-            }
         }
      
         private void dataGridViewHuyen_CellContentClick(object sender, DataGridViewCellEventArgs e)

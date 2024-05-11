@@ -243,8 +243,9 @@ namespace QLDC
 
         }
 
-       
+        private void checkFemale_CheckedChanged(object sender, EventArgs e)
+        {
 
-        
+        }
     }
 }

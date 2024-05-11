@@ -145,5 +145,50 @@ namespace QLDC
         {
 
         }
+
+        private void dataGridViewCB_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnSearch_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SearchCell_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtContent_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSign_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNhap_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -47,10 +47,11 @@ namespace QLDC
             // 
             this.btnThoat.BackColor = System.Drawing.Color.LightBlue;
             this.btnThoat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(104, 374);
+            this.btnThoat.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.Location = new System.Drawing.Point(100, 376);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(634, 63);
+            this.btnThoat.Size = new System.Drawing.Size(661, 50);
             this.btnThoat.TabIndex = 37;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
@@ -59,10 +60,11 @@ namespace QLDC
             // btnXa
             // 
             this.btnXa.BackColor = System.Drawing.Color.LightBlue;
-            this.btnXa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXa.Location = new System.Drawing.Point(606, 251);
+            this.btnXa.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXa.Location = new System.Drawing.Point(577, 268);
+            this.btnXa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnXa.Name = "btnXa";
-            this.btnXa.Size = new System.Drawing.Size(211, 52);
+            this.btnXa.Size = new System.Drawing.Size(255, 50);
             this.btnXa.TabIndex = 36;
             this.btnXa.Text = "Phường/Xã/Thị Trấn";
             this.btnXa.UseVisualStyleBackColor = false;
@@ -71,10 +73,11 @@ namespace QLDC
             // btnHuyen
             // 
             this.btnHuyen.BackColor = System.Drawing.Color.LightBlue;
-            this.btnHuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuyen.Location = new System.Drawing.Point(333, 251);
+            this.btnHuyen.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuyen.Location = new System.Drawing.Point(304, 268);
+            this.btnHuyen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnHuyen.Name = "btnHuyen";
-            this.btnHuyen.Size = new System.Drawing.Size(195, 52);
+            this.btnHuyen.Size = new System.Drawing.Size(255, 50);
             this.btnHuyen.TabIndex = 35;
             this.btnHuyen.Text = "Quận/Huyện";
             this.btnHuyen.UseVisualStyleBackColor = false;
@@ -83,10 +86,11 @@ namespace QLDC
             // btnTinh
             // 
             this.btnTinh.BackColor = System.Drawing.Color.LightBlue;
-            this.btnTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTinh.Location = new System.Drawing.Point(41, 251);
+            this.btnTinh.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTinh.Location = new System.Drawing.Point(30, 268);
+            this.btnTinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTinh.Name = "btnTinh";
-            this.btnTinh.Size = new System.Drawing.Size(195, 52);
+            this.btnTinh.Size = new System.Drawing.Size(255, 50);
             this.btnTinh.TabIndex = 34;
             this.btnTinh.Text = "Tỉnh/Thành phố";
             this.btnTinh.UseVisualStyleBackColor = false;
@@ -96,9 +100,10 @@ namespace QLDC
             // 
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Image = global::QLDC.Properties.Resources._372f677cf09a8cf376a10a13a236d7a5;
-            this.pictureBox3.Location = new System.Drawing.Point(652, 118);
+            this.pictureBox3.Location = new System.Drawing.Point(634, 100);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(122, 117);
+            this.pictureBox3.Size = new System.Drawing.Size(143, 135);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 33;
             this.pictureBox3.TabStop = false;
@@ -107,9 +112,10 @@ namespace QLDC
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Image = global::QLDC.Properties.Resources._9a70ba746399f90915cc095701913fc2;
-            this.pictureBox2.Location = new System.Drawing.Point(367, 118);
+            this.pictureBox2.Location = new System.Drawing.Point(364, 100);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(122, 117);
+            this.pictureBox2.Size = new System.Drawing.Size(143, 135);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 32;
             this.pictureBox2.TabStop = false;
@@ -119,9 +125,10 @@ namespace QLDC
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = global::QLDC.Properties.Resources._1263913;
-            this.pictureBox1.Location = new System.Drawing.Point(79, 118);
+            this.pictureBox1.Location = new System.Drawing.Point(89, 100);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(122, 117);
+            this.pictureBox1.Size = new System.Drawing.Size(143, 135);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 31;
             this.pictureBox1.TabStop = false;
@@ -130,20 +137,21 @@ namespace QLDC
             // 
             this.label1.BackColor = System.Drawing.Color.LightBlue;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Size = new System.Drawing.Size(847, 65);
+            this.label1.Padding = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.label1.Size = new System.Drawing.Size(856, 55);
             this.label1.TabIndex = 0;
             this.label1.Text = "Quản Lý Địa Điểm";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmQLDiaDiem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(847, 484);
+            this.ClientSize = new System.Drawing.Size(856, 456);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnXa);
@@ -152,6 +160,7 @@ namespace QLDC
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmQLDiaDiem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý Địa Điểm";

@@ -154,7 +154,12 @@ namespace QLDC
         {
             errorProvider.SetError(txtTenTinh, null);
         }
-       
+       private void btnHuyen_Click(object sender, EventArgs e)
+        {
+            frmHuyen frmHuyen = new frmHuyen();
+            frmHuyen.Show();
+            this.Close();
+        }    
         private void btnUpdate_Click(object sender, EventArgs e)
         {
 
@@ -200,12 +205,6 @@ namespace QLDC
             int soLuong = Convert.ToInt32(txtSLNB.Text.Trim());
 
             CapNhatSoLuongNhiemBenh(tenTinh, soLuong);
-        }
-        private void btnHuyen_Click(object sender, EventArgs e)
-        {
-            frmHuyen frmHuyen = new frmHuyen();
-            frmHuyen.Show();
-            this.Close();
         }
         private void dataGridViewTinh_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

@@ -45,10 +45,11 @@
             // 
             this.btnThoat.BackColor = System.Drawing.Color.LightBlue;
             this.btnThoat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(80, 352);
+            this.btnThoat.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.Location = new System.Drawing.Point(103, 367);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(634, 63);
+            this.btnThoat.Size = new System.Drawing.Size(642, 50);
             this.btnThoat.TabIndex = 35;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
@@ -57,10 +58,11 @@
             // btnViewTTYT
             // 
             this.btnViewTTYT.BackColor = System.Drawing.Color.LightBlue;
-            this.btnViewTTYT.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewTTYT.Location = new System.Drawing.Point(572, 252);
+            this.btnViewTTYT.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewTTYT.Location = new System.Drawing.Point(579, 270);
+            this.btnViewTTYT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnViewTTYT.Name = "btnViewTTYT";
-            this.btnViewTTYT.Size = new System.Drawing.Size(195, 52);
+            this.btnViewTTYT.Size = new System.Drawing.Size(230, 50);
             this.btnViewTTYT.TabIndex = 34;
             this.btnViewTTYT.Text = "Xem TTYT";
             this.btnViewTTYT.UseVisualStyleBackColor = false;
@@ -69,10 +71,11 @@
             // btnUpdateTTYT
             // 
             this.btnUpdateTTYT.BackColor = System.Drawing.Color.LightBlue;
-            this.btnUpdateTTYT.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateTTYT.Location = new System.Drawing.Point(309, 252);
+            this.btnUpdateTTYT.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateTTYT.Location = new System.Drawing.Point(315, 270);
+            this.btnUpdateTTYT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnUpdateTTYT.Name = "btnUpdateTTYT";
-            this.btnUpdateTTYT.Size = new System.Drawing.Size(195, 52);
+            this.btnUpdateTTYT.Size = new System.Drawing.Size(230, 50);
             this.btnUpdateTTYT.TabIndex = 33;
             this.btnUpdateTTYT.Text = "Cập Nhật TTYT";
             this.btnUpdateTTYT.UseVisualStyleBackColor = false;
@@ -81,10 +84,11 @@
             // btnAddTTYT
             // 
             this.btnAddTTYT.BackColor = System.Drawing.Color.LightBlue;
-            this.btnAddTTYT.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddTTYT.Location = new System.Drawing.Point(42, 252);
+            this.btnAddTTYT.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddTTYT.Location = new System.Drawing.Point(53, 270);
+            this.btnAddTTYT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddTTYT.Name = "btnAddTTYT";
-            this.btnAddTTYT.Size = new System.Drawing.Size(195, 52);
+            this.btnAddTTYT.Size = new System.Drawing.Size(230, 50);
             this.btnAddTTYT.TabIndex = 32;
             this.btnAddTTYT.Text = "Thêm Mới TTYT\r\n";
             this.btnAddTTYT.UseVisualStyleBackColor = false;
@@ -94,9 +98,10 @@
             // 
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Image = global::QLDC.Properties.Resources._372f677cf09a8cf376a10a13a236d7a5;
-            this.pictureBox3.Location = new System.Drawing.Point(609, 111);
+            this.pictureBox3.Location = new System.Drawing.Point(622, 113);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(122, 117);
+            this.pictureBox3.Size = new System.Drawing.Size(143, 135);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 31;
             this.pictureBox3.TabStop = false;
@@ -105,9 +110,10 @@
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Image = global::QLDC.Properties.Resources._9a70ba746399f90915cc095701913fc2;
-            this.pictureBox2.Location = new System.Drawing.Point(343, 111);
+            this.pictureBox2.Location = new System.Drawing.Point(354, 113);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(122, 117);
+            this.pictureBox2.Size = new System.Drawing.Size(143, 135);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 30;
             this.pictureBox2.TabStop = false;
@@ -116,9 +122,10 @@
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = global::QLDC.Properties.Resources._1263913;
-            this.pictureBox1.Location = new System.Drawing.Point(80, 111);
+            this.pictureBox1.Location = new System.Drawing.Point(93, 113);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(122, 117);
+            this.pictureBox1.Size = new System.Drawing.Size(143, 135);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 29;
             this.pictureBox1.TabStop = false;
@@ -127,21 +134,22 @@
             // 
             this.label1.BackColor = System.Drawing.Color.LightBlue;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Size = new System.Drawing.Size(800, 67);
+            this.label1.Padding = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.label1.Size = new System.Drawing.Size(856, 55);
             this.label1.TabIndex = 36;
             this.label1.Text = "Quản Lý Thông Tin Y Tế";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmQLTTYT
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(856, 456);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnViewTTYT);
@@ -150,6 +158,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmQLTTYT";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý thông tin y tế";
