@@ -125,5 +125,10 @@ namespace QLDC
         {
 
         }
+
+        private void txtNhapLaiMKM_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

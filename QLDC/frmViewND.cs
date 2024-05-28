@@ -154,5 +154,10 @@ namespace QLDC
             frmAddTTYT.Show();
             this.Close();
         }
+
+        private void dataGridViewND_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
