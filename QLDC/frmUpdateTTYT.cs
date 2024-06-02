@@ -200,7 +200,7 @@ namespace QLDC
                     cmd.ExecuteNonQuery();
                 }
             }
-
+            MessageBox.Show("Cập nhật thông tin y tế người dân thành công", "Thông báo", MessageBoxButtons.OK);
 
             frmViewTTYT viewTTYT = (frmViewTTYT)Application.OpenForms["frmViewTTYT"];
             if (viewTTYT != null)

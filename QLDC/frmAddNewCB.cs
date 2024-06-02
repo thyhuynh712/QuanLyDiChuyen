@@ -117,13 +117,30 @@ namespace QLDC
             }
             return true;
         }
-
+        private bool isCCCDExist(string cccd)
+        {
+            using (SqlConnection con = Connection.getConnection())
+            {
+                con.Open();
+                string sql = "SELECT COUNT(*) FROM CANBO_DIADIEM WHERE MACB = @MaCB";
+                using (SqlCommand cmd = new SqlCommand(sql, con))
+                {
+                    cmd.Parameters.AddWithValue("@MaCB", cccd);
+                    int count = Convert.ToInt32(cmd.ExecuteScalar());
+                    return count > 0;
+                }
+            }
+        }
         private void btnReset_Click(object sender, EventArgs e)
         {
             resetData();
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            if (!checkData())
+            {
+                return;
+            }
 
             string MACB = txtCCCD.Text.Trim();
             string HOTEN = txtHoTen.Text.Trim();
@@ -132,6 +149,12 @@ namespace QLDC
             string TENTINH = cboTinh.Text.Trim();
             string TENHUYEN = cboHuyen.Text.Trim();
             string TENXA = cboXa.Text.Trim();
+
+            if (isCCCDExist(MACB))
+            {
+                MessageBox.Show("CCCD đã tồn tại. Vui lòng nhập CCCD khác.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             using (SqlConnection con = Connection.getConnection())
             {

@@ -333,12 +333,20 @@ namespace QLDC
             string TENHUYENDI = cboHuyen.Text.Trim();
             string TENXADI = cboXa.Text.Trim();
             string DIACHIDI = txtDuong.Text.Trim();
-            string TENTINHDEN = cboTinh.Text.Trim();
-            string TENHUYENDEN = cboHuyen.Text.Trim();
-            string TENXADEN = cboXa.Text.Trim();
-            string DIACHIDEN = txtDuong.Text.Trim();
+            string TENTINHDEN = cboTinh1.Text.Trim();
+            string TENHUYENDEN = cboHuyen1.Text.Trim();
+            string TENXADEN = cboXa1.Text.Trim();
+            string DIACHIDEN = txtDuong1.Text.Trim();
             DateTime THOIGIAN = dtpTG.Value;
 
+            
+            if (TENTINHDI == TENTINHDEN && TENHUYENDI == TENHUYENDEN && TENXADI == TENXADEN && DIACHIDI == DIACHIDEN)
+            {
+                MessageBox.Show("Điểm đi và điểm đến không được trùng nhau.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Proceed with database insert if points are not the same
             using (SqlConnection con = Connection.getConnection())
             {
                 con.Open();
@@ -360,6 +368,7 @@ namespace QLDC
                     cmd.ExecuteNonQuery();
                 }
             }
+
             MessageBox.Show("Thêm mới lộ trình thành công", "Thông báo", MessageBoxButtons.OK);
 
             frmViewLT viewLT = (frmViewLT)Application.OpenForms["frmViewLT"];
@@ -367,8 +376,8 @@ namespace QLDC
             {
                 viewLT.loadDanhSachLoTrinh();
             }
-
         }
+
         private void btnXemLT_Click(object sender, EventArgs e)
         {
             frmViewLT frmViewLT = new frmViewLT();
